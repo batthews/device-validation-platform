@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from .models.device import DeviceRegistration
+from app.models.device import DeviceRegistration
 
 app = FastAPI(title="Device Validation Platform API")
 

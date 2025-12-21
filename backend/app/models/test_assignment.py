@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field
 from datetime import datetime
-from typing import Dict, Optional
+from typing import Dict, Optional, Any
 from enum import Enum
 
 
@@ -16,7 +16,7 @@ class TestAssignment(BaseModel):
     assignment_id: str
     test_id: str
     device_id: str
-    parameters: Dict[str, any]
+    parameters: Dict[str, Any]
     status: AssignmentStatus
     assigned_at: datetime
     started_at: Optional[datetime] = None
